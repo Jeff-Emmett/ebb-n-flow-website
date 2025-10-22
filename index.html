@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebb'nFlow Therapeutics - Massage, Laser & Movement Therapy</title>
+    <meta name="description" content="Experience holistic healing through our integrated therapeutic services. Massage therapy, laser therapy, and movement therapy in a peaceful, professional setting.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header id="navbar">
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">
+                    <img src="images/logo.jpg" alt="Ebb'nFlow Therapeutics Logo">
+                    <span class="logo-text">Ebb'nFlow <span class="highlight">Therapeutics</span></span>
+                </a>
+                
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
+                    <li><a href="#prices" onclick="closeMobileMenu()">Prices</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="cta-nav">
+                        <a href="https://ebbnflowmassage.clinicsense.com" target="_blank" class="btn btn-primary">
+                            📅 Book Appointment
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Ebb'nFlow <span class="highlight">Therapeutics</span></h1>
+                    <p class="hero-subtitle">Excellence in Massage Therapy Since 2013</p>
+                    <p class="hero-description">A serene, home-based practice in the heart of downtown St Catharines</p>
+                    <p class="hero-tagline">Owned and operated by Dahlia B. Steinberg RMT.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="https://ebbnflowmassage.clinicsense.com" target="_blank" class="btn btn-primary">Book Appointment</a>
+                        <a href="about.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/reception-area.jpg" alt="Welcoming reception area at Ebb'nFlow Therapeutics">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-intro">
+        <div class="container">
+            <div class="about-card">
+                <p>Ebb'nFlow Therapeutics provides Massage Therapy that is attentive to your unique needs and goals. Whether you are looking for recovery from the stress and strains of work, to manage pain, prevent injury or improve your physical performance, we're here to meet you where you are.</p>
+                <p>Unlike any other massage therapy practice, Ebb'nFlow Therapeutics also offers a distinctly unique service that combines the cutting edge technology of Laser Therapy (Photobiomodulation) in combination with massage therapy for accelerated healing of acute pain conditions and injury.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Services</h2>
+            <p class="section-description">Please click on the links below to learn more about the unique services offered, based on a comprehensive, clinical practice of Massage Therapy.</p>
+            
+            <div class="services-grid">
+                <!-- Massage Therapy -->
+                <div class="service-card">
+                    <img src="images/treatment-room.jpg" alt="Professional massage therapy treatment room">
+                    <div class="service-content">
+                        <h3>Massage Therapy Treatment</h3>
+                        <p>General Swedish Massage combined with specialized techniques tailored to your specific needs.</p>
+                        <button class="btn btn-outline" onclick="showModal('massage')">Learn More About Massage Therapy</button>
+                        <a href="https://ebbnflowmassage.clinicsense.com" target="_blank" class="btn btn-primary">Book Appointment</a>
+                    </div>
+                </div>
+
+                <!-- Laser Therapy -->
+                <div class="service-card">
+                    <img src="images/bioflex-laser.png" alt="BioFlex Laser Therapy">
+                    <div class="service-content">
+                        <h3>Laser Therapy Treatment</h3>
+                        <p>Stand alone or combined with Massage Therapy (recommended). Laser therapy provides accelerated healing for musculoskeletal injury, wounds, arthritis, and nerve injury.</p>
+                        <button class="btn btn-outline" onclick="showModal('laser')">Learn More About Laser Therapy</button>
+                        <a href="https://ebbnflowmassage.clinicsense.com" target="_blank" class="btn btn-primary">Book Appointment</a>
+                    </div>
+                </div>
+
+                <!-- Movement Education -->
+                <div class="service-card">
+                    <img src="images/movement-class.png" alt="Movement education class">
+                    <div class="service-content">
+                        <h3>Movement Education</h3>
+                        <p>Remedial exercise instruction involves teaching targeted strength, stretch or mobility exercises that further the benefits of massage therapy long term.</p>
+                        <a href="movement.html" class="btn btn-outline">See Movement Workshops</a>
+                        <a href="https://ebbnflowmassage.clinicsense.com" target="_blank" class="btn btn-primary">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="prices" class="pricing">
+        <div class="container">
+            <h2>Prices</h2>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Massage and/or Laser Therapy</h3>
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span>30 Minute</span>
+                            <span>$53.50 <small>(+$6.95 HST)</small></span>
+                        </div>
+                        <div class="price-item">
+                            <span>45 Minute</span>
+                            <span>$80.25 <small>(+$10.43 HST)</small></span>
+                        </div>
+                        <div class="price-item">
+                            <span>60 Minute</span>
+                            <span>$107.00 <small>(+$13.91 HST)</small></span>
+                        </div>
+                        <div class="price-item">
+                            <span>75 Minute</span>
+                            <span>$133.75 <small>(+$17.38 HST)</small></span>
+                        </div>
+                        <div class="price-item">
+                            <span>90 Minute</span>
+                            <span>$160.50 <small>(+$20.86 HST)</small></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Add-on Laser Therapy</h3>
+                    <p class="pricing-note">If combined simultaneously with Massage Therapy for more than 15 minutes</p>
+                    <div class="addon-price">
+                        <span class="large-price">$1.00/minute</span>
+                        <span class="price-note">(+ HST)</span>
+                    </div>
+                    <p class="pricing-note">Available in 15, 30, 45 and 60 minute intervals</p>
+                </div>
+            </div>
+
+            <div class="insurance-card">
+                <h3>Payment & Insurance</h3>
+                <p class="insurance-highlight">Direct billing is now available</p>
+                <div class="insurance-details">
+                    <p><strong>Accepted:</strong> Cash, Direct Billing, E-transfer, Debit, Credit Card (Visa, AmEx, Mastercard)</p>
+                    <p>RMTs are regulated health care professionals recognized by insurance companies across Ontario.</p>
+                    <p>It is recommended that clients check with their insurance provider about whether they are required to have a doctor's note in order to submit a claim.</p>
+                    <p>Your receipt will include the practitioner's registration number necessary for an insurance claim submission. This number verifies that your therapist is registered with the College of Massage Therapists of Ontario (CMTO).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Begin Your Wellness Journey?</h2>
+            <div class="cta-contact">
+                <div class="contact-item">
+                    <span>📞</span>
+                    <span>(289) 969-3219</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Downtown St. Catharines</span>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <a href="https://ebbnflowmassage.clinicsense.com" target="_blank" class="btn btn-primary">Book Appointment</a>
+                <a href="contact.html" class="btn btn-primary">Contact Dahlia</a>
+            </div>
+            <div class="rmt-badge">
+                <img src="images/rmt-certification.png" alt="Registered Massage Therapist - Professional Hands You Can Trust">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo.jpg" alt="Ebb'nFlow Therapeutics Logo">
+                    <h3>Ebb'nFlow <span class="highlight">Therapeutics</span></h3>
+                    <p>A boutique wellness sanctuary. One client, one space, one transformative experience at a time.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Massage Therapy</a></li>
+                        <li><a href="#services">Laser Therapy</a></li>
+                        <li><a href="#services">Movement Therapy</a></li>
+                        <li><a href="contact.html">Consultation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#prices">Prices</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="what-to-expect.html">What to Expect</a></li>
+                        <li><a href="movement.html">Movement Workshops</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>📍 59 Wellington Street<br>St. Catharines, ON L2R 5P9</p>
+                    <p>📞 (289) 969-3219</p>
+                    <p>✉️ info@ebbnflowtherapeutics.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ebb'nFlow Therapeutics. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle"></h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
