@@ -89,10 +89,10 @@ export default function Home() {
               <div className="service-content">
                 <h3>Massage Therapy Treatment</h3>
                 <p>
-                  General Swedish Massage combined with specialized techniques including Deep Tissue and Myofascial Release, all tailored to your specific needs and wellness goals.
+                  General Swedish Massage combined with specialized techniques including Myofascial Deep Tissue, all tailored to your specific needs and wellness goals.
                 </p>
                 <button className="btn btn-outline" data-modal="massage">
-                  Learn More About Massage Therapy
+                  Learn More About Massage 
                 </button>
                 <a
                   href="https://ebbnflowmassage.clinicsense.com"
@@ -117,8 +117,7 @@ export default function Home() {
               <div className="service-content">
                 <h3>Laser Therapy Treatment</h3>
                 <p>
-                  Laser therapy provides accelerated healing for musculoskeletal injury, arthritis, and nerve injury.
-                  Stand alone or recommended to combine with Massage Therapy.
+                  Laser therapy provides accelerated healing for musculoskeletal injury, arthritis, and nerve injury. Stand alone or combine with Massage Therapy.
                 </p>
                 <button className="btn btn-outline" data-modal="laser">
                   Learn More About Laser Therapy
