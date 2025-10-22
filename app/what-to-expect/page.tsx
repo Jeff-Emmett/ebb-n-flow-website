@@ -8,9 +8,9 @@ import Image from "next/image"
 
 export default function WhatToExpectPage() {
   return (
-    <div className="min-h-screen bg-stone-50">
+    <div className="min-h-screen bg-beige-lightest">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-stone-100 to-stone-200 py-20">
+      <section className="bg-gradient-to-br from-beige-light to-beige py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <Badge variant="outline" className="text-stone-600 border-stone-300">
@@ -32,7 +32,7 @@ export default function WhatToExpectPage() {
             <h2 className="text-3xl font-light text-stone-800 text-center mb-12">The Initial Appointment</h2>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <Card className="border-stone-200">
+              <Card className="border-beige">
                 <CardHeader>
                   <FileText className="h-8 w-8 text-stone-600 mb-2" />
                   <CardTitle className="text-xl font-medium text-stone-800">Pre-Appointment Forms</CardTitle>
@@ -57,7 +57,7 @@ export default function WhatToExpectPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-stone-200">
+              <Card className="border-beige">
                 <CardHeader>
                   <Clock className="h-8 w-8 text-stone-600 mb-2" />
                   <CardTitle className="text-xl font-medium text-stone-800">Assessment Process</CardTitle>
@@ -75,7 +75,7 @@ export default function WhatToExpectPage() {
               </Card>
             </div>
 
-            <Card className="border-stone-200 bg-stone-100">
+            <Card className="border-beige bg-beige-light">
               <CardContent className="p-8">
                 <h3 className="text-xl font-medium text-stone-800 mb-4">First Session Components</h3>
                 <div className="grid md:grid-cols-2 gap-6">
@@ -99,13 +99,13 @@ export default function WhatToExpectPage() {
       </section>
 
       {/* Assessment Details */}
-      <section className="py-20 bg-stone-100">
+      <section className="py-20 bg-beige-lightest">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-light text-stone-800 text-center mb-12">Comprehensive Assessment</h2>
 
             <div className="space-y-6">
-              <Card className="border-stone-200">
+              <Card className="border-beige">
                 <CardContent className="p-6">
                   <p className="text-stone-600 leading-relaxed">
                     The first treatment session requires additional time to go over the forms and perform an initial
@@ -115,7 +115,7 @@ export default function WhatToExpectPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-stone-200">
+              <Card className="border-beige">
                 <CardContent className="p-6">
                   <p className="text-stone-600 leading-relaxed">
                     With numerous tools available to her, Dahlia continuously discerns which techniques may be most
@@ -137,7 +137,7 @@ export default function WhatToExpectPage() {
 
             <div className="grid lg:grid-cols-2 gap-8">
               <div className="space-y-6">
-                <Card className="border-stone-200">
+                <Card className="border-beige">
                   <CardHeader>
                     <Heart className="h-8 w-8 text-stone-600 mb-2" />
                     <CardTitle className="text-xl font-medium text-stone-800">Personalized Approach</CardTitle>
@@ -151,7 +151,7 @@ export default function WhatToExpectPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-stone-200">
+                <Card className="border-beige">
                   <CardContent className="p-6">
                     <h3 className="font-medium text-stone-800 mb-3">Communication & Consent</h3>
                     <p className="text-stone-600 leading-relaxed">
@@ -177,7 +177,7 @@ export default function WhatToExpectPage() {
                     <p className="text-sm font-medium text-stone-800">Your Private Treatment Space</p>
                   </div>
                 </div>
-                <Card className="border-stone-200 bg-stone-50">
+                <Card className="border-beige bg-beige-lightest">
                   <CardContent className="p-6">
                     <h3 className="font-medium text-stone-800 mb-3">A Science and an Art Form</h3>
                     <p className="text-stone-600 leading-relaxed mb-4">
@@ -194,7 +194,7 @@ export default function WhatToExpectPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-stone-200">
+                <Card className="border-beige">
                   <CardContent className="p-6">
                     <h3 className="font-medium text-stone-800 mb-3">Education & Home Care</h3>
                     <p className="text-stone-600 leading-relaxed">
@@ -211,7 +211,7 @@ export default function WhatToExpectPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-stone-100">
+      <section className="py-16 bg-beige-light">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-8">
             <h2 className="text-2xl font-light text-stone-800">Ready to Experience Holistic Care?</h2>
@@ -220,13 +220,8 @@ export default function WhatToExpectPage() {
               treat the body holistically as an interconnected system.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <ClinicSenseButton size="medium" color="black" />
-              <Button
-                variant="outline"
-                size="lg"
-                asChild
-                className="border-stone-300 text-stone-700 hover:bg-stone-200 bg-transparent"
-              >
+              <ClinicSenseButton size="medium" color="green" />
+              <Button size="lg" asChild className="bg-nature-green hover:bg-nature-green-dark text-white">
                 <Link href="/contact">Have Questions?</Link>
               </Button>
             </div>

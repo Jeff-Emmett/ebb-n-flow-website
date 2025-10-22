@@ -118,6 +118,11 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @keyframes fade-in {
@@ -183,4 +188,25 @@
 
 .text-sage-green {
   color: #8bc34a;
+}
+
+/* Beige color palette */
+.bg-beige-lightest {
+  background-color: #f7f3ef;
+}
+
+.bg-beige-light {
+  background-color: #f0e9e0;
+}
+
+.bg-beige {
+  background-color: #e8dfd3;
+}
+
+.bg-beige-medium {
+  background-color: #d9cdbf;
+}
+
+.bg-beige-dark {
+  background-color: #c4b5a3;
 }

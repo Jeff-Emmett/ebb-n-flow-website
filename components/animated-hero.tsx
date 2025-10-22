@@ -24,7 +24,7 @@ export default function AnimatedHero() {
   }, [])
 
   return (
-    <div className="space-y-6 min-h-[400px] flex flex-col justify-center">
+    <div className="space-y-6 min-h-[400px] flex flex-col justify-center items-center lg:items-start">
       {/* Welcome to Ebb'nFlow Therapeutics */}
       <div
         className={`transition-all duration-1000 ease-in-out ${

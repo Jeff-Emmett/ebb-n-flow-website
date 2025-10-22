@@ -60,7 +60,12 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/about" className="text-gray-300 hover:text-nature-green transition-colors">
-                  About Us
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/#prices" className="text-gray-300 hover:text-nature-green transition-colors">
+                  Prices
                 </Link>
               </li>
               <li>
@@ -88,11 +93,9 @@ export default function Footer() {
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-nature-green mt-0.5" />
                 <span className="text-gray-300">
-                  123 Wellness Way
+                  59 Wellington Street
                   <br />
-                  Suite 200
-                  <br />
-                  St. Catharines, ON L2R 7P9
+                  St. Catharines, ON L2R 5P9
                 </span>
               </div>
               <div className="flex items-center gap-2">

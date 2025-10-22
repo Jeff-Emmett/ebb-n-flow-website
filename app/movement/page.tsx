@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -5,12 +7,17 @@ import { Heart, Star } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import ClinicSenseButton from "@/components/clinicsense-button"
+import { useEffect } from "react"
 
 export default function MovementPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
-    <div className="min-h-screen bg-stone-50">
+    <div className="min-h-screen bg-beige-lightest">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-stone-100 to-stone-200 py-20">
+      <section className="bg-gradient-to-br from-beige-light to-beige py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <Badge variant="outline" className="text-stone-600 border-stone-300">
@@ -33,7 +40,7 @@ export default function MovementPage() {
             <h2 className="text-3xl font-light text-stone-800 text-center mb-12">Movement Education Options</h2>
 
             <div className="space-y-8">
-              <Card className="border-stone-200">
+              <Card className="border-beige">
                 <CardContent className="p-8">
                   <p className="text-stone-600 leading-relaxed mb-6">
                     Remedial exercise aka "Rem-Ex" instruction involves teaching a few targeted strength, stretch or
@@ -50,7 +57,7 @@ export default function MovementPage() {
               </Card>
 
               <div className="grid md:grid-cols-3 gap-6">
-                <Card className="border-stone-200">
+                <Card className="border-beige">
                   <CardHeader>
                     <div className="w-12 h-12 bg-stone-700 rounded-full flex items-center justify-center mb-4">
                       <span className="text-white font-bold">1</span>
@@ -65,7 +72,7 @@ export default function MovementPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-stone-200">
+                <Card className="border-beige">
                   <CardHeader>
                     <div className="w-12 h-12 bg-stone-700 rounded-full flex items-center justify-center mb-4">
                       <span className="text-white font-bold">2</span>
@@ -80,7 +87,7 @@ export default function MovementPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-stone-200">
+                <Card className="border-beige">
                   <CardHeader>
                     <div className="w-12 h-12 bg-stone-700 rounded-full flex items-center justify-center mb-4">
                       <span className="text-white font-bold">3</span>
@@ -101,12 +108,12 @@ export default function MovementPage() {
       </section>
 
       {/* Origin Story */}
-      <section className="py-20 bg-stone-100">
+      <section className="py-20 bg-beige-lightest">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-light text-stone-800 text-center mb-12">The Ebb'nFlow Origin Story</h2>
 
-            <Card className="border-stone-200 bg-white">
+            <Card className="border-beige bg-white">
               <CardContent className="p-8">
                 <div className="space-y-6 text-stone-600 leading-relaxed">
                   <p>
@@ -145,7 +152,7 @@ export default function MovementPage() {
 
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div className="space-y-6">
-                <Card className="border-stone-200">
+                <Card className="border-beige">
                   <CardHeader>
                     <Heart className="h-8 w-8 text-stone-600 mb-2" />
                     <CardTitle className="text-xl font-medium text-stone-800">Fun, Liberating & Educational</CardTitle>
@@ -159,7 +166,7 @@ export default function MovementPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-stone-200 bg-stone-50">
+                <Card className="border-beige bg-beige-lightest">
                   <CardContent className="p-6">
                     <h3 className="font-medium text-stone-800 mb-3">Workshop Benefits</h3>
                     <div className="space-y-2 text-stone-600">
@@ -202,7 +209,7 @@ export default function MovementPage() {
       </section>
 
       {/* Personal Expression */}
-      <section className="py-20 bg-stone-100">
+      <section className="py-20 bg-beige-lightest">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-3xl font-light text-stone-800">Continuing the Dance</h2>
@@ -224,7 +231,7 @@ export default function MovementPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-beige-light">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-8">
             <h2 className="text-2xl font-light text-stone-800">Ready to Move with More Freedom?</h2>
@@ -234,13 +241,8 @@ export default function MovementPage() {
               or group workshops.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <ClinicSenseButton size="medium" color="black" />
-              <Button
-                variant="outline"
-                size="lg"
-                asChild
-                className="border-stone-300 text-stone-700 hover:bg-stone-200 bg-transparent"
-              >
+              <ClinicSenseButton size="medium" color="green" />
+              <Button size="lg" asChild className="bg-nature-green hover:bg-nature-green-dark text-white">
                 <Link href="/contact">Ask About Workshops</Link>
               </Button>
             </div>

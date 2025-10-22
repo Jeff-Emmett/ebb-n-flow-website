@@ -35,9 +35,9 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-stone-50">
+    <div className="min-h-screen bg-beige-lightest">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-stone-100 to-stone-200 py-20">
+      <section className="bg-gradient-to-br from-beige-light to-beige py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <Badge variant="outline" className="text-stone-600 border-stone-300">
@@ -88,11 +88,11 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form & Info Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-beige-lightest">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <Card className="border-stone-200">
+            <Card className="border-beige">
               <CardHeader>
                 <CardTitle className="text-2xl font-light text-stone-800">Send Us a Message</CardTitle>
                 <CardDescription className="text-stone-600">
@@ -192,7 +192,7 @@ export default function ContactPage() {
 
             {/* Contact Information */}
             <div className="space-y-8">
-              <Card className="border-stone-200">
+              <Card className="border-beige">
                 <CardHeader>
                   <CardTitle className="text-xl font-medium text-stone-800">Visit Our Clinic</CardTitle>
                 </CardHeader>
@@ -202,11 +202,9 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium text-stone-800">Address</p>
                       <p className="text-stone-600">
-                        123 Wellness Way
+                        59 Wellington Street
                         <br />
-                        Suite 200
-                        <br />
-                        St. Catharines, ON L2R 7P9
+                        St. Catharines, ON L2R 5P9
                       </p>
                     </div>
                   </div>
@@ -229,7 +227,7 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-stone-200">
+              <Card className="border-beige">
                 <CardHeader>
                   <CardTitle className="text-xl font-medium text-stone-800">Office Hours</CardTitle>
                 </CardHeader>
@@ -255,7 +253,7 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-stone-200 bg-stone-100">
+              <Card className="border-beige bg-beige-light">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-3">
                     <Clock className="h-5 w-5 text-stone-600 mt-1" />
@@ -275,7 +273,7 @@ export default function ContactPage() {
       </section>
 
       {/* Booking Section */}
-      <section className="py-16 bg-stone-100">
+      <section className="py-16 bg-beige-light">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-8">
             <h2 className="text-2xl font-light text-stone-800">Ready for Your Personal Wellness Experience?</h2>
@@ -284,15 +282,12 @@ export default function ContactPage() {
               space just for your wellness journey.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <ClinicSenseButton size="large" color="black" />
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-stone-300 text-stone-700 hover:bg-stone-200 bg-transparent"
-              >
+              <ClinicSenseButton size="large" color="green" />
+              <Button size="lg" className="bg-nature-green hover:bg-nature-green-dark text-white">
                 Call for Personal Consultation
               </Button>
             </div>
+            
           </div>
         </div>
       </section>

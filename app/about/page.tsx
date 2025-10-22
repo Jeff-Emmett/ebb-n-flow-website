@@ -7,9 +7,9 @@ import ClinicSenseButton from "@/components/clinicsense-button"
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-stone-50">
+    <div className="min-h-screen bg-beige-lightest">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-stone-100 to-stone-200 py-20">
+      <section className="bg-gradient-to-br from-beige-light to-beige py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <Badge variant="outline" className="text-stone-600 border-stone-300">
@@ -20,8 +20,8 @@ export default function AboutPage() {
               Founder and Owner of Ebb'nFlow Therapeutics
             </div>
             <p className="text-xl text-stone-600 leading-relaxed">
-              A lifelong interest in movement and the healing arts is the foundation of her practice as a Massage
-              Therapist and Movement Educator.
+              A lifelong interest in movement and the healing arts is the foundation of her practice as a massage
+              therapist, laser therapist, and movement educator.
             </p>
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function AboutPage() {
                 ethical standards of RMTs.
               </p>
 
-              <div className="bg-stone-100 p-6 rounded-lg">
+              <div className="bg-beige-light p-6 rounded-lg">
                 <h3 className="font-medium text-stone-800 mb-3">Practice Evolution</h3>
                 <div className="space-y-3 text-stone-600 text-sm">
                   <p>
@@ -60,6 +60,7 @@ export default function AboutPage() {
                   <p>
                     <strong>2017:</strong> Moved to home location on Woodbine Ave., working solely for herself
                   </p>
+
                   <p>
                     <strong>2025:</strong> Relocated to downtown St. Catharines, rebranded to Ebb'nFlow Therapeutics
                   </p>
@@ -80,34 +81,37 @@ export default function AboutPage() {
       </section>
 
       {/* Education & Training */}
-      <section className="py-20 bg-stone-100">
+      <section className="py-20 bg-beige-lightest">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-light text-stone-800 text-center mb-12">Education & Training</h2>
 
             <div className="space-y-8">
-              <Card className="border-stone-200">
+              <Card className="border-beige">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-medium text-stone-800 mb-4">Formal Education</h3>
                   <div className="space-y-3 text-stone-600">
                     <p>
+                      <strong>2021:</strong> Meditech International Inc. Bioflex Laser Therapy Certification
+                    </p>
+                    <p>
                       <strong>2012:</strong> Graduate, Massage Therapy Program, Ontario College of Health and Technology
                     </p>
                     <p>
-                      <strong>1998:</strong> School of Toronto Dance Theatre's Professional Training Program
+                      <strong>2009:</strong> Pilates Teacher Training, STOTT Toronto (Beginner to Advanced Matwork)
                     </p>
                     <p>
                       <strong>2003-05:</strong> Yoga Teacher Training, Yogaspace Toronto (200 hr diploma + Advanced
                       Teacher Training)
                     </p>
                     <p>
-                      <strong>2009:</strong> Pilates Teacher Training, STOTT Toronto (Beginner to Advanced Matwork)
+                      <strong>1998:</strong> School of Toronto Dance Theatre's Professional Training Program
                     </p>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="border-stone-200">
+              <Card className="border-beige">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-medium text-stone-800 mb-4">Continuing Education</h3>
                   <div className="space-y-2 text-stone-600">
@@ -115,19 +119,21 @@ export default function AboutPage() {
                     <p>• Biodynamic craniosacral therapy</p>
                     <p>• Osteopathic techniques for RMTs</p>
                     <p>• Advanced sacro-lumbar and thoracic spine assessments and joint mobilization</p>
-                    <p>• Certification in laser therapy with Bioflex Laser Therapy system integration (2021)</p>
                     <p>• Axis Syllabus - evolving theory and practice of dynamic human movement</p>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="border-stone-200 bg-stone-50">
+              <Card className="border-beige bg-beige-light">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-medium text-stone-800 mb-4">Recognition & Support</h3>
                   <div className="space-y-2 text-stone-600">
                     <p>Massage Therapy is Dahlia's second career, supported by:</p>
                     <p>• Training and subsistence grant from the Dancer's Transition and Resource Centre (2010)</p>
-                    <p>• Special second year award for academic excellence (Heritage Canada, 2011)</p>
+                    <p>
+                      • Special second year award for academic excellence (Dancer’s Transition and Resource Centre,
+                      2011)
+                    </p>
                   </div>
                 </CardContent>
               </Card>
@@ -151,8 +157,49 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Meet Olivia Section */}
+      <section className="py-20 bg-beige-lightest">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-light text-stone-800 text-center mb-12">Meet Olivia</h2>
+
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
+              <div className="relative">
+                <Image
+                  src="/images/olivia-cat.png"
+                  alt="Olivia, the friendly clinic cat at Ebb'nFlow Therapeutics"
+                  width={400}
+                  height={400}
+                  className="rounded-2xl shadow-lg object-cover w-full"
+                />
+              </div>
+              <div className="space-y-4">
+                <Card className="border-beige bg-white">
+                  <CardContent className="p-6">
+                    <p className="text-stone-600 leading-relaxed mb-4">
+                      No visit to Ebb'nFlow Therapeutics would be complete without meeting Olivia, our gentle and
+                      affectionate clinic companion. This sweet tabby girl has a calming presence that perfectly
+                      complements the therapeutic atmosphere of our space.
+                    </p>
+                    <p className="text-stone-600 leading-relaxed mb-4">
+                      Olivia enjoys greeting clients with soft purrs and will often curl up nearby during sessions,
+                      adding an extra layer of comfort and relaxation to your experience. Her friendly demeanor and
+                      peaceful energy make her a beloved part of the Ebb'nFlow family.
+                    </p>
+                    <p className="text-stone-600 leading-relaxed italic">
+                      Please let us know if you have any allergies or prefer a cat-free session—we're happy to
+                      accommodate all our clients' needs!
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section className="py-16 bg-stone-100">
+      <section className="py-16 bg-beige-light">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-8">
             <h2 className="text-2xl font-light text-stone-800">Experience Dahlia's Unique Approach</h2>
@@ -160,15 +207,19 @@ export default function AboutPage() {
               Combining 30 years of movement expertise with clinical massage therapy excellence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <ClinicSenseButton size="medium" color="black" />
-              <Button
-                variant="outline"
-                size="lg"
-                asChild
-                className="border-stone-300 text-stone-700 hover:bg-stone-200 bg-transparent"
-              >
+              <ClinicSenseButton size="medium" color="green" />
+              <Button size="lg" asChild className="bg-nature-green hover:bg-nature-green-dark text-white">
                 <Link href="/what-to-expect">What to Expect</Link>
               </Button>
+            </div>
+            <div className="pt-4">
+              <Image
+                src="/images/rmt-certification.png"
+                alt="Registered Massage Therapist - Professional Hands You Can Trust"
+                width={200}
+                height={90}
+                className="mx-auto"
+              />
             </div>
           </div>
         </div>
