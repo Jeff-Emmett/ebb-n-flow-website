@@ -69,14 +69,14 @@ export default function Footer() {
           </div>
 
           <div className="footer-contact">
-            <h4>Location Info</h4>
+            <h4>Contact Info</h4>
             <p>
               📍 59 Wellington Street
               <br />
               St. Catharines, ON L2R 5P9
             </p>
             <p>📞 (289) 969-3219</p>
-            
+            <p>✉️ info@ebbnflowtherapeutics.com</p>
           </div>
         </div>
 
