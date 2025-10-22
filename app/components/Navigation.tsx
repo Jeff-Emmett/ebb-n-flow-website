@@ -15,7 +15,7 @@ export default function Navigation() {
       <div className="container">
         <nav>
           <Link href="/" className="logo">
-            <Image src="./images/logo.jpg" alt="Ebb'nFlow Therapeutics Logo" width={100} height={100} />
+            <Image src="/images/logo.jpg" alt="Ebb'nFlow Therapeutics Logo" width={100} height={100} />
             <span className="logo-text">
               Ebb&apos;nFlow <span className="highlight">Therapeutics</span>
             </span>
