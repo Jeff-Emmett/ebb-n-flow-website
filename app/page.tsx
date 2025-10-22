@@ -37,7 +37,7 @@ export default function Home() {
             </div>
             <div className="hero-image">
               <Image
-                src="/images/reception-area.jpg"
+                src="./images/reception-area.jpg"
                 alt="Welcoming reception area at Ebb'nFlow Therapeutics"
                 width={600}
                 height={500}
@@ -80,7 +80,7 @@ export default function Home() {
             {/* Massage Therapy */}
             <div className="service-card">
               <Image
-                src="/images/treatment-room.jpg"
+                src="./images/treatment-room.jpg"
                 alt="Professional massage therapy treatment room"
                 width={400}
                 height={200}
@@ -89,10 +89,11 @@ export default function Home() {
               <div className="service-content">
                 <h3>Massage Therapy Treatment</h3>
                 <p>
-                  General Swedish Massage combined with specialized techniques including Myofascial Deep Tissue, all tailored to your specific needs and wellness goals.
+                  General Swedish Massage combined with specialized techniques including Myofascial Deep Tissue, all
+                  tailored to your specific needs and wellness goals.
                 </p>
                 <button className="btn btn-outline" data-modal="massage">
-                  Learn More About Massage 
+                  Learn More About Massage
                 </button>
                 <a
                   href="https://ebbnflowmassage.clinicsense.com"
@@ -108,7 +109,7 @@ export default function Home() {
             {/* Laser Therapy */}
             <div className="service-card">
               <Image
-                src="/images/bioflex-laser.png"
+                src="./images/bioflex-laser.png"
                 alt="BioFlex Laser Therapy"
                 width={400}
                 height={200}
@@ -117,7 +118,8 @@ export default function Home() {
               <div className="service-content">
                 <h3>Laser Therapy Treatment</h3>
                 <p>
-                  Laser therapy provides accelerated healing for musculoskeletal injury, arthritis, and nerve injury. Stand alone or combine with Massage Therapy.
+                  Laser therapy provides accelerated healing for musculoskeletal injury, arthritis, and nerve injury.
+                  Stand alone or combine with Massage Therapy.
                 </p>
                 <button className="btn btn-outline" data-modal="laser">
                   Learn More About Laser Therapy
@@ -136,7 +138,7 @@ export default function Home() {
             {/* Movement Education */}
             <div className="service-card">
               <Image
-                src="/images/movement-class.png"
+                src="./images/movement-class.png"
                 alt="Movement education class"
                 width={400}
                 height={200}

@@ -13,7 +13,7 @@ export default function Footer() {
             <p>A boutique wellness sanctuary. One client, one space, one transformative experience at a time.</p>
             <div className="rmt-badge-footer">
               <Image
-                src="/images/rmt-certification.png"
+                src="./images/rmt-certification.png"
                 alt="Registered Massage Therapist - Professional Hands You Can Trust"
                 width={200}
                 height={100}
