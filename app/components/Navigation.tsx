@@ -29,12 +29,12 @@ export default function Navigation() {
 
           <ul className={`nav-links ${isOpen ? "active" : ""}`} id="navLinks">
             <li>
-              <a href="#services" onClick={closeMenu}>
+              <a href="/#services" onClick={closeMenu}>
                 Services
               </a>
             </li>
             <li>
-              <a href="#prices" onClick={closeMenu}>
+              <a href="/#prices" onClick={closeMenu}>
                 Prices
               </a>
             </li>

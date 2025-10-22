@@ -33,13 +33,13 @@ export default function Footer() {
             <h4>Services</h4>
             <ul>
               <li>
-                <a href="#services">Massage Therapy</a>
+                <a href="/#services">Massage Therapy</a>
               </li>
               <li>
-                <a href="#services">Laser Therapy</a>
+                <a href="/#services">Laser Therapy</a>
               </li>
               <li>
-                <a href="#services">Movement Therapy</a>
+                <a href="/#services">Movement Therapy</a>
               </li>
               <li>
                 <Link href="/contact">Consultation</Link>
@@ -54,7 +54,7 @@ export default function Footer() {
                 <Link href="/about">About</Link>
               </li>
               <li>
-                <a href="#prices">Prices</a>
+                <a href="/#prices">Prices</a>
               </li>
               <li>
                 <Link href="/contact">Contact</Link>
