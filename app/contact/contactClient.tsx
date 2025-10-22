@@ -17,9 +17,9 @@ export default function ContactClient() {
       {/* Hero Section */}
       <section className="page-hero">
         <div className="container">
+          <h1 style={{ fontSize: "3.5rem", marginBottom: "1rem" }}>Contact Us</h1>
           <span className="badge">Get in Touch</span>
-          <h1>Contact Us</h1>
-          <p className="hero-subtitle">&quot;A place to unwind, a place to heal, a place to grow&quot;</p>
+          
           <p className="hero-description">
             Ready to experience boutique wellness? Let&apos;s chat about creating your personalized sanctuary for
             healing and self-care.
@@ -69,7 +69,7 @@ export default function ContactClient() {
                 Have questions or want to book an appointment? Send us an email and we&apos;ll get back to you within 24
                 hours.
               </p>
-              <a href="mailto:info@ebbnflowtherapeutics.com" className="email-link">
+              <a href="mailto:info@ebbnflowtherapeutics.com" className="email-link italic">
                 info@ebbnflowtherapeutics.com
               </a>
             </div>

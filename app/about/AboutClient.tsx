@@ -18,9 +18,9 @@ export default function AboutClient() {
       {/* Hero Section */}
       <section className="page-hero">
         <div className="container">
-          <span className="badge">About Dahlia</span>
-          <h1>Dahlia B. Steinberg, RMT</h1>
+          <h1 style={{ fontSize: "3.5rem", marginBottom: "1rem" }}>Dahlia B. Steinberg, RMT</h1>
           <p className="hero-subtitle">Founder and Owner of Ebb&apos;nFlow Therapeutics</p>
+          <span className="badge">About Dahlia</span>
           <p className="hero-description">
             A lifelong interest in movement and the healing arts is the foundation of her practice as a massage
             therapist, laser therapist, and movement educator.
@@ -204,15 +204,7 @@ export default function AboutClient() {
               What to Expect
             </Link>
           </div>
-          <div className="rmt-badge">
-            <Image
-              src="/images/rmt-certification.png"
-              alt="Registered Massage Therapist - Professional Hands You Can Trust"
-              width={200}
-              height={100}
-              style={{ maxWidth: "200px", height: "auto" }}
-            />
-          </div>
+          
         </div>
       </section>
 
