@@ -7,3 +7,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Claude Code local instructions (symlink)
+CLAUDE.md

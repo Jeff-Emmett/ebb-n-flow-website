@@ -279,7 +279,7 @@ export default function Home() {
             </div>
             <div className="contact-item">
               <span>💌</span>
-              <span>info@ebbnflowtherapeutics.com</span>
+              <span>info@ebbnflow-massageandlaser.com</span>
             </div>
           </div>
           <div className="cta-buttons">

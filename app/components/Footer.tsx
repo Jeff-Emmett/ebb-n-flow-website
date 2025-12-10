@@ -76,7 +76,7 @@ export default function Footer() {
               St. Catharines, ON L2R 5P9
             </p>
             <p>📞 (289) 969-3219</p>
-            <p>✉️ info@ebbnflowtherapeutics.com</p>
+            <p>✉️ info@ebbnflow-massageandlaser.com</p>
           </div>
         </div>
 

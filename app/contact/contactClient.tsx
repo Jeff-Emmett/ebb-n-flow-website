@@ -69,8 +69,8 @@ export default function ContactClient() {
                 Have questions or want to book an appointment? Send us an email and we&apos;ll get back to you within 24
                 hours.
               </p>
-              <a href="mailto:info@ebbnflowtherapeutics.com" className="email-link italic">
-                info@ebbnflowtherapeutics.com
+              <a href="mailto:info@ebbnflow-massageandlaser.com" className="email-link italic">
+                info@ebbnflow-massageandlaser.com
               </a>
             </div>
 
@@ -105,8 +105,8 @@ export default function ContactClient() {
                   <div>
                     <p className="item-title">Email</p>
                     <p>
-                      <a href="mailto:info@ebbnflowtherapeutics.com" className="email-link-small">
-                        info@ebbnflowtherapeutics.com
+                      <a href="mailto:info@ebbnflow-massageandlaser.com" className="email-link-small">
+                        info@ebbnflow-massageandlaser.com
                       </a>
                     </p>
                   </div>
