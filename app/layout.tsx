@@ -6,10 +6,35 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ebbnflowtherapeutics.com"),
   title: "Ebb'nFlow Therapeutics - Massage, Laser & Movement Therapy",
   description:
     "Experience holistic healing through our integrated therapeutic services. Massage therapy, laser therapy, and movement therapy in a peaceful, professional setting.",
-    generator: 'v0.app'
+  generator: "v0.app",
+  openGraph: {
+    title: "Ebb'nFlow Therapeutics - Massage, Laser & Movement Therapy",
+    description:
+      "Experience holistic healing through our integrated therapeutic services. Massage therapy, laser therapy, and movement therapy in a peaceful, professional setting.",
+    url: "https://ebbnflowtherapeutics.com",
+    siteName: "Ebb'nFlow Therapeutics",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Ebb'nFlow Therapeutics - Treatment Room",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ebb'nFlow Therapeutics - Massage, Laser & Movement Therapy",
+    description:
+      "Experience holistic healing through our integrated therapeutic services. Massage therapy, laser therapy, and movement therapy in a peaceful, professional setting.",
+    images: ["/og-image.jpg"],
+  },
 }
 
 export default function RootLayout({
