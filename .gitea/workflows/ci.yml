@@ -1,4 +1,4 @@
-# Gitea Actions CI/CD — Static Site (build + deploy only)
+# Gitea Actions CI/CD — Static Site (build + deploy)
 
 name: CI/CD
 
