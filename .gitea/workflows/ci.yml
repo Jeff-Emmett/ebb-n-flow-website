@@ -49,7 +49,7 @@ jobs:
 
       - name: Smoke test
         run: |
-          sleep 15
+          sleep 30
           HTTP_CODE=$(ssh -o StrictHostKeyChecking=no -i ~/.ssh/deploy_key root@${{ secrets.DEPLOY_HOST }} \
             "curl -sSL -o /dev/null -w '%{http_code}' --max-time 30 https://ebb-staging.jeffemmett.com/ 2>/dev/null || echo 000")
           if [ "$HTTP_CODE" -lt 200 ] || [ "$HTTP_CODE" -ge 400 ]; then
