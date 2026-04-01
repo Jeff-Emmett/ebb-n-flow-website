@@ -7,8 +7,8 @@ on:
     branches: [main]
 
 env:
-  REGISTRY: gitea.jeffemmett.com
-  IMAGE: gitea.jeffemmett.com/jeffemmett/ebb-n-flow-website
+  REGISTRY: localhost:3000
+  IMAGE: localhost:3000/jeffemmett/ebb-n-flow-website
 
 jobs:
   deploy:
