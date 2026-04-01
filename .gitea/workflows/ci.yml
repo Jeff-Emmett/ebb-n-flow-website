@@ -1,6 +1,4 @@
-# Gitea Actions CI/CD — Static Site (no tests, build + deploy only)
-# Copy to: <repo>/.gitea/workflows/ci.yml
-# Replace: ebb-n-flow-website, /opt/websites/ebb-n-flow-website, https://ebb-staging.jeffemmett.com/
+# Gitea Actions CI/CD — Static Site (build + deploy only)
 
 name: CI/CD
 
