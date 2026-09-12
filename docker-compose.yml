@@ -1,24 +1,20 @@
 services:
   ebbflow-prod:
+    build: .
     container_name: ebbflow-prod
     restart: unless-stopped
     labels:
-    - traefik.enable=true
-    - traefik.http.routers.ebbflow.rule=Host(`ebb-staging.jeffemmett.com`)
-    - traefik.http.services.ebbflow.loadbalancer.server.port=80
+      - "traefik.enable=true"
+      - "traefik.http.routers.ebbflow.rule=Host(`ebbnflowtherapeutics.com`) || Host(`www.ebbnflowtherapeutics.com`) || Host(`ebbnflow-massageandlaser.com`) || Host(`www.ebbnflow-massageandlaser.com`)"
+      - "traefik.http.services.ebbflow.loadbalancer.server.port=80"
     networks:
-    - traefik-public
+      - traefik-public
     healthcheck:
-      test:
-      - CMD
-      - wget
-      - -q
-      - --spider
-      - http://127.0.0.1:80/
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:80/"]
       interval: 30s
       timeout: 10s
       retries: 3
-    image: localhost:3000/jeffemmett/ebb-n-flow-website:${IMAGE_TAG:-latest}
+
 networks:
   traefik-public:
     external: true
